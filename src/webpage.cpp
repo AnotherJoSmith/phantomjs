@@ -413,6 +413,7 @@ WebPage::WebPage(QObject* parent, const QUrl& baseUrl)
     QWebSettings* pageSettings = m_customWebPage->settings();
     pageSettings->setAttribute(QWebSettings::OfflineStorageDatabaseEnabled, true);
     pageSettings->setAttribute(QWebSettings::OfflineWebApplicationCacheEnabled, true);
+    pageSettings->setAttribute(QWebSettings::PrintElementBackgrounds, false);
     pageSettings->setAttribute(QWebSettings::FrameFlatteningEnabled, true);
 
     pageSettings->setAttribute(QWebSettings::LocalStorageEnabled, true);
